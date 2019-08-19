@@ -8,7 +8,8 @@ This is a summary of the work done for my Google Summer of Code project "Improve
 
 
 ## Project Link
-https://summerofcode.withgoogle.com/projects/#4859963594244096
+[Improve Shading Language Support in GraphicsFuzz](https://summerofcode.withgoogle.com/projects/#4859963594244096)
+
 
 ## Mentors
 
@@ -120,11 +121,12 @@ SPIRV-Cross is a very convenient tool that helps parsing and converting SPIR-V t
 
 To see all SPIRV-Cross issues I filed please check [here.](https://github.com/KhronosGroup/SPIRV-Cross/issues?utf8=%E2%9C%93&q=+is%3Aissue+author%3Ajiradeto+)
 
-
  
 ### New shader generator Tool
 
-In the end of GSoC program, GraphicsFuzz has equiped with a new tool called Known Value Shader Generator.
+GraphicsFuzz has equiped with a new tool called Known Value Shader Generator which generates a shader job from the given RGBA colors. This tool mutates the numeric inputs by applying various transformations that  eventually generates the mutated expression producing the original value. Currently, the tool has a limited set of transformations. The next steps for this tool involve extending transformations set.
+
+The following PRs involve implementing a new shader generator tool.
 
 
 [#625](https://github.com/google/graphicsfuzz/pull/625): WIP: add skeleton classes for the new primitive mutation
