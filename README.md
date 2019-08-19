@@ -17,7 +17,7 @@ Alastair Donaldson, Paul Thomson
 
 
 ## Deliverables
-
+New supports that have been add to GraphicsFuzz are elaborated as follow:
 - Add support for GLSL Built-In functions
 - Add new ways to generate an opaque expression
 - New sample shaders
@@ -68,7 +68,6 @@ Fuzzing a shader in GraphicsFuzz involves applying a number of transformations t
 ### New sample shaders
 
 ![new_shaders](images/new_shaders.png)
-
 
 In GraphicsFuzz, sample shaders play an important role in exposing bugs in shader compilers as they are the initial set of shaders that would be mutated whose final result are the variant shaders that might detect the potential conmpiler bugs. 
 
@@ -124,10 +123,9 @@ To see all SPIRV-Cross issues I filed please check [here.](https://github.com/Kh
  
 ### New shader generator Tool
 
-GraphicsFuzz has equiped with a new tool called Known Value Shader Generator which generates a shader job from the given RGBA colors. This tool mutates the numeric inputs by applying various transformations which eventually generates the mutated expressions that guarantee to produce the original input value. Currently, the tool has a limited set of transformations. The next steps for this tool involve extending transformations set.
+GraphicsFuzz has now equiped with a new tool called Known Value Shader Generator which generates a shader job from the given RGBA colors. This tool mutates the numeric inputs by applying various transformations which eventually generates the mutated expressions that guarantee to produce the original input values. With the help of this tool, we have a brand new way to generate a variant shader just by simply providing the expected values.
 
 The following PRs involve implementing a new shader generator tool.
-
 
 [#625](https://github.com/google/graphicsfuzz/pull/625): WIP: add skeleton classes for the new primitive mutation
 
@@ -136,3 +134,7 @@ The following PRs involve implementing a new shader generator tool.
 [#681](https://github.com/google/graphicsfuzz/pull/681): Expression Generator: find numbers for addition based on known facts
 
 [#693](https://github.com/google/graphicsfuzz/pull/693): Expression Generator: introduce uniforms
+
+#### Future work
+
+Currently, the tool has a limited numer of transformations. The next steps for this tool involve extending transformations set and integrate this tool into the fuzzing chain of GraphicsFuzz.
