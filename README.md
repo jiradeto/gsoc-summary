@@ -1,6 +1,9 @@
 # Google Summer of Code 2019 Report - Jiradet Ounjai
 
-This is a summary of the work done for my Google Summer of Code project *Improve Shading Language Support in GraphicsFuzz*. 
+The Google Summer of Code program has turned out to be a great learning opportunity for me. I gain fresh knowledge from my fantastic mentors through the discussions and the intense code reviews we had. I would like to thank my mentors for the time and energy you put into helping me.
+
+
+I have made this document to summarize the work done for my Google Summer of Code project *Improve Shading Language Support in GraphicsFuzz*. 
 
 
 ## Personal Links
@@ -137,6 +140,8 @@ The following PRs involve implementing a new shader generator tool.
 
 [#693](https://github.com/google/graphicsfuzz/pull/693): Expression Generator: introduce uniforms
 
-#### Future work
+#### Future development
 
 Currently, the shader generator tool has a limited numer of transformations. The next steps for this tool involve extending transformations set and integrating this tool into the fuzzing chain of GraphicsFuzz.
+
+
