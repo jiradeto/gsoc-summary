@@ -128,6 +128,8 @@ To see all SPIRV-Cross issues I filed please check [here.](https://github.com/Kh
  
 ### New shader generator tool
 
+![new_shaders](images/overview.png)
+
 GraphicsFuzz has now equiped with a new tool called Known Value Shader Generator which generates a shader job from the given RGBA colors. This tool mutates the numeric inputs by applying various transformations which eventually generates the mutated expressions that guarantee to produce the original input values. With the help of this tool, we have a brand new way to generate a variant shader just by simply providing the expected values.
 
 The following PRs involve implementing a new shader generator tool.
