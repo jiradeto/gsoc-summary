@@ -15,15 +15,15 @@ Alastair Donaldson, Paul Thomson
 
 - Add support for GLSL Built-In functions
 - Add new ways to generate an opaque expression
-- New Sample Shaders
+- New sample shaders
 - Enhancement for Reducer
 - Use GraphicsFuzz to find bugs in other tools
-- New Shader Generator Tool
+- New shader generator tool
 
 
 ### Add support for GLSL Built-In functions
 
-GraphicsFuzz is allowed to injected arbitrary code, by providing new support we teach the generator a new opportunity to inject a brand new functions.
+GLSL built-in functions are functions that available for use in a shader. By providing a support for the GLSL built-ins, we teach GraphicsFuzz how to call functions appropriately by ensuring that the required parameters are match with the GLSL specification. Moreover, we have to check that the built-in function being injected into a shader is compatible with the given shading language version. The following PRs have provided a support for the GLSL built-in functions.
 
 [#554](https://github.com/google/graphicsfuzz/pull/554): Add support for angle and trigonometric built-in functions
 
@@ -60,7 +60,7 @@ Fuzzing a shader in GraphicsFuzz involves applying a number of transformations t
 [#475](https://github.com/google/graphicsfuzz/pull/475): Rename opaque factories variable
 
 
-### New Sample Shaders
+### New sample shaders
 
 ![new_shaders](images/new_shaders.png)
 
@@ -118,7 +118,8 @@ To see all SPIRV-Cross issues I filed please check [here.](https://github.com/Kh
 
 
  
-### New Shader Generator Tool
+### New shader generator Tool
+
 
 
 [#625](https://github.com/google/graphicsfuzz/pull/625): WIP: add skeleton classes for the new primitive mutation
