@@ -22,8 +22,8 @@ Alastair Donaldson, Paul Thomson
 
 
 ### Add support for GLSL Built-In functions
+GLSL built-in functions are functions that available for use in a shader. GraphicsFuzz donates these built-ins into the unreachable statements so that they will not be actually executed. By providing a support for the GLSL built-ins, we teach GraphicsFuzz how to call functions appropriately by ensuring that the required function arguments are match with the GLSL specification. Moreover, we have to check that the built-in function being injected into a shader is compatible with the given shading language version. The following PRs have provided a support for the GLSL built-in functions.
 
-GLSL built-in functions are functions that available for use in a shader. By providing a support for the GLSL built-ins, we teach GraphicsFuzz how to call functions appropriately by ensuring that the required parameters are match with the GLSL specification. Moreover, we have to check that the built-in function being injected into a shader is compatible with the given shading language version. The following PRs have provided a support for the GLSL built-in functions.
 
 [#554](https://github.com/google/graphicsfuzz/pull/554): Add support for angle and trigonometric built-in functions
 
