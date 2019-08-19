@@ -21,20 +21,17 @@ Alastair Donaldson, Paul Thomson
 
 ## Deliverables
 
+
 My project idea focused on providing a new shading language support in GraphicsFuzz. To accomplish the goal, I have enhanced the tool in various aspects which could be elaborated as follow:
 
-- [Google Summer of Code 2019 Report - Jiradet Ounjai](#google-summer-of-code-2019-report---jiradet-ounjai)
-  - [Personal Links](#personal-links)
-  - [Project Link](#project-link)
-  - [Mentors](#mentors)
-  - [Deliverables](#deliverables)
-    - [Add support for GLSL Built-In Functions](#add-support-for-glsl-built-in-functions)
-    - [Add new ways to generate an opaque expression](#add-new-ways-to-generate-an-opaque-expression)
-    - [New sample shaders](#new-sample-shaders)
-    - [Enhancement for Reducer](#enhancement-for-reducer)
-    - [Use GraphicsFuzz to find bugs in other tools](#use-graphicsfuzz-to-find-bugs-in-other-tools)
-    - [New shader generator tool](#new-shader-generator-tool)
-      - [Future development](#future-development)
+- [Add support for GLSL Built-In Functions](#add-support-for-glsl-built-in-functions)
+- [Add new ways to generate an opaque expression](#add-new-ways-to-generate-an-opaque-expression)
+- [New sample shaders](#new-sample-shaders)
+- [Enhancement for Reducer](#enhancement-for-reducer)
+- [Use GraphicsFuzz to find bugs in other tools](#use-graphicsfuzz-to-find-bugs-in-other-tools)
+- [New shader generator tool](#new-shader-generator-tool)
+
+
 
 
 ### Add support for GLSL Built-In Functions 
