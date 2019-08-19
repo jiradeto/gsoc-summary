@@ -17,8 +17,10 @@ Alastair Donaldson, Paul Thomson
 
 
 ## Deliverables
-New supports that have been add to GraphicsFuzz are elaborated as follow:
-- Add support for GLSL Built-In functions
+
+My project idea focused on providing a new shading language support in GraphicsFuzz. To accomplish the goal, I have enhanced the tool, with the help of my mentors, in various aspects which could be elaborated as follow:
+
+- Add support for GLSL Built-In Functions
 - Add new ways to generate an opaque expression
 - New sample shaders
 - Enhancement for Reducer
@@ -26,8 +28,8 @@ New supports that have been add to GraphicsFuzz are elaborated as follow:
 - New shader generator tool
 
 
-### Add support for GLSL Built-In functions
-GLSL built-in functions are functions that available for use in a shader. GraphicsFuzz donates these built-ins into the unreachable statements so that they will not be actually executed. By providing a support for the GLSL built-ins, we teach GraphicsFuzz how to call functions appropriately by ensuring that the required function arguments are match with the GLSL specification. Moreover, we have to check that the built-in function being injected into a shader is compatible with the given shading language version. The following PRs have provided a support for the GLSL built-in functions.
+### Add support for GLSL Built-In Functions
+GLSL built-in functions are functions that available for use in a shader. GraphicsFuzz donates these built-ins into the unreachable statements so that they will not be actually executed. By providing a support for the GLSL built-ins, we teach GraphicsFuzz how to call functions appropriately by ensuring that the required function arguments are matched with the GLSL specifications. Moreover, we have to check that the built-in function being injected into a shader is compatible with the given shading language version. The following PRs have provided a support for the GLSL built-in functions.
 
 
 [#554](https://github.com/google/graphicsfuzz/pull/554): Add support for angle and trigonometric built-in functions
@@ -114,14 +116,14 @@ To remove code fragment injected by the generator, we use reducer to reduce the 
 
 ### Use GraphicsFuzz to find bugs in other tools
 
-GraphicsFuzz's team has discovered and reported a bunch of bugs lying in many different GPU vendors and we still keep doing the same because we would be happy if we could help compiler developers detecting more uncovering bugs. Over the past few months, I had a chance to use GraphicsFuzz to help finding bugs in [SPIRV Cross](https://github.com/KhronosGroup/SPIRV-Cross). 
+GraphicsFuzz's team has discovered and reported a bunch of bugs lying in many different GPU vendors and we still keep doing the same as we would be happy if we could help compiler developers detecting more uncovering bugs. Over the past few months, I had a chance to use GraphicsFuzz to help finding bugs in [SPIRV Cross](https://github.com/KhronosGroup/SPIRV-Cross). 
 
 SPIRV-Cross is a very convenient tool that helps parsing and converting SPIR-V to other shader languages. Throughout GSoC program, I relied heavily on this tool since I am using [MoltenVK](https://github.com/KhronosGroup/MoltenVK) to run SPIR-V on Mac and MoltenVK internally calls SPIRV-Cross to convert SPIR-V into Apple's Metal Shading Language.
 
 To see all SPIRV-Cross issues I filed please check [here.](https://github.com/KhronosGroup/SPIRV-Cross/issues?utf8=%E2%9C%93&q=+is%3Aissue+author%3Ajiradeto+)
 
  
-### New shader generator Tool
+### New shader generator tool
 
 GraphicsFuzz has now equiped with a new tool called Known Value Shader Generator which generates a shader job from the given RGBA colors. This tool mutates the numeric inputs by applying various transformations which eventually generates the mutated expressions that guarantee to produce the original input values. With the help of this tool, we have a brand new way to generate a variant shader just by simply providing the expected values.
 
@@ -137,4 +139,4 @@ The following PRs involve implementing a new shader generator tool.
 
 #### Future work
 
-Currently, the tool has a limited numer of transformations. The next steps for this tool involve extending transformations set and integrate this tool into the fuzzing chain of GraphicsFuzz.
+Currently, the shader generator tool has a limited numer of transformations. The next steps for this tool involve extending transformations set and integrating this tool into the fuzzing chain of GraphicsFuzz.
