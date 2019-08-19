@@ -1,6 +1,6 @@
 # Google Summer of Code 2019 Report - Jiradet Ounjai
 
-This is a summary of the work done for my Google Summer of Code project "Improve Shading Language Support in GraphicsFuzz". 
+This is a summary of the work done for my Google Summer of Code project *Improve Shading Language Support in GraphicsFuzz*. 
 
 
 ## Personal Links
