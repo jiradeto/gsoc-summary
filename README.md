@@ -3,6 +3,10 @@
 This is a summary of the work done for my Google Summer of Code project "Improve Shading Language Support in GraphicsFuzz". 
 
 
+## Personal Links
+[Github](https://github.com/jiradeto) - [Linkedin](https://www.linkedin.com/in/jiradeto/)
+
+
 ## Project Link
 https://summerofcode.withgoogle.com/projects/#4859963594244096
 
@@ -120,6 +124,7 @@ To see all SPIRV-Cross issues I filed please check [here.](https://github.com/Kh
  
 ### New shader generator Tool
 
+In the end of GSoC program, GraphicsFuzz has equiped with a new tool called Known Value Shader Generator.
 
 
 [#625](https://github.com/google/graphicsfuzz/pull/625): WIP: add skeleton classes for the new primitive mutation
