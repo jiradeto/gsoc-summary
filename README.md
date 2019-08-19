@@ -23,15 +23,21 @@ Alastair Donaldson, Paul Thomson
 
 My project idea focused on providing a new shading language support in GraphicsFuzz. To accomplish the goal, I have enhanced the tool in various aspects which could be elaborated as follow:
 
-- Add support for GLSL Built-In Functions
-- Add new ways to generate an opaque expression
-- New sample shaders
-- Enhancement for Reducer
-- Use GraphicsFuzz to find bugs in other tools
-- New shader generator tool
+- [Google Summer of Code 2019 Report - Jiradet Ounjai](#google-summer-of-code-2019-report---jiradet-ounjai)
+  - [Personal Links](#personal-links)
+  - [Project Link](#project-link)
+  - [Mentors](#mentors)
+  - [Deliverables](#deliverables)
+    - [Add support for GLSL Built-In Functions](#add-support-for-glsl-built-in-functions)
+    - [Add new ways to generate an opaque expression](#add-new-ways-to-generate-an-opaque-expression)
+    - [New sample shaders](#new-sample-shaders)
+    - [Enhancement for Reducer](#enhancement-for-reducer)
+    - [Use GraphicsFuzz to find bugs in other tools](#use-graphicsfuzz-to-find-bugs-in-other-tools)
+    - [New shader generator tool](#new-shader-generator-tool)
+      - [Future development](#future-development)
 
 
-### Add support for GLSL Built-In Functions
+### Add support for GLSL Built-In Functions 
 GLSL built-in functions are functions that available for use in a shader. GraphicsFuzz donates these built-ins into the unreachable statements so that they will not be actually executed. By providing a support for the GLSL built-ins, we teach GraphicsFuzz how to call functions appropriately by ensuring that the required function arguments are matched with the GLSL specifications. Moreover, we have to check that the built-in function being injected into a shader is compatible with the given shading language version. The following PRs have provided a support for the GLSL built-in functions.
 
 
