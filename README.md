@@ -104,6 +104,10 @@ Having said that, we have only few sample shaders that come with GraphicsFuzz by
 
 [#676](https://github.com/google/graphicsfuzz/pull/676): New 310es sample shaders - binary search tree
 
+| binarysearch_tree.frag |
+| :---: | 
+| ![binarysearch_tree](./images/jiradet_shader_binarysearch_tree.png) | 
+
 
 ### Enhancement for Reducer 
 To remove code fragment injected by the generator, we use reducer to reduce the variant shader into a very small and simple shader that is still inducing a bug. GraphicsFuzz' reducer basically finds the interesting code fragment to be removed based on the reducer opportunities. Currently, we have sufficiently large set of reducer opportunities that can shrink a variant shader significantly. However, there were areas need improvement. The following PRs involve adding new reducer opportunities to the GraphicsFuzz's reducer aiming to help reducer reducing GLSL shaders more efficient:
