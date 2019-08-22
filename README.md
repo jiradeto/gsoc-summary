@@ -88,9 +88,7 @@ Having said that, we have only few sample shaders that come with GraphicsFuzz by
 | :---: | :---: | :---: |
 | ![trigonometric_strip](./images/jiradet_shader_trigonometric_strip.png) | ![selection_sort_struct](./images/jiradet_shader_selection_sort_struct.png) | ![prefix_sum_checkers](./images/jiradet_prefix_sum_checkers.png) |
 
-
 [#643](https://github.com/google/graphicsfuzz/pull/643): New 310es sample shaders - v2
-
 
 | binarysearch_bw.frag | mergesort_mosaic.frag |
 | :---: | :---: | 
@@ -98,6 +96,11 @@ Having said that, we have only few sample shaders that come with GraphicsFuzz by
 
 
 [#660](https://github.com/google/graphicsfuzz/pull/660): New 310es sample shaders - quicksort 
+
+| quicksort_palette.frag |
+| :---: | 
+| ![quicksort_palette](./images/jiradet_shader_quicksort_palette.png) | 
+
 
 [#676](https://github.com/google/graphicsfuzz/pull/676): New 310es sample shaders - binary search tree
 
