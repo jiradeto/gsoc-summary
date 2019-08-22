@@ -84,17 +84,9 @@ Having said that, we have only few sample shaders that come with GraphicsFuzz by
 
 [#602](https://github.com/google/graphicsfuzz/pull/602): New 310es sample shaders - v1 
 
-| trigonometric_strip.frag |
-| --- |
-| ![trigonometric_strip](./images/jiradet_shader_trigonometric_strip.png) |
-
-| selection_sort_struct.frag |
-| --- |
-| ![selection_sort_struct](./images/jiradet_shader_selection_sort_struct.png) |
-
-| prefix_sum_checkers.frag |
-| --- |
-| ![prefix_sum_checkers](./images/jiradet_prefix_sum_checkers.png) |
+| trigonometric_strip.frag | selection_sort_struct.frag | prefix_sum_checkers.frag |
+| :---: | :---: | :---: |
+| ![trigonometric_strip](./images/jiradet_shader_trigonometric_strip.png) | ![selection_sort_struct](./images/jiradet_shader_selection_sort_struct.png) | ![prefix_sum_checkers](./images/jiradet_prefix_sum_checkers.png) |
 
 
 [#643](https://github.com/google/graphicsfuzz/pull/643): New 310es sample shaders - v2
