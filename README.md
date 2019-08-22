@@ -86,7 +86,7 @@ Having said that, we have only few sample shaders that come with GraphicsFuzz by
 
 | trigonometric_strip.frag | selection_sort_struct.frag | prefix_sum_checkers.frag |
 | :---: | :---: | :---: |
-| ![trigonometric_strip](./images/jiradet_shader_trigonometric_strip.png) | ![selection_sort_struct](./images/jiradet_shader_selection_sort_struct.png) | ![prefix_sum_checkers](./images/jiradet_prefix_sum_checkers.png) |
+| ![trigonometric_strip](./images/jiradet_shader_trigonometric_strip.png) | ![selection_sort_struct](./images/jiradet_shader_selection_sort_struct.png) | ![prefix_sum_checkers](./images/jiradet_shader_prefix_sum_checkers.png) |
 
 [#643](https://github.com/google/graphicsfuzz/pull/643): New 310es sample shaders - v2
 
@@ -161,6 +161,6 @@ The following PRs involve implementing a new shader generator tool.
 [#693](https://github.com/google/graphicsfuzz/pull/693): Expression Generator: introduce uniforms
 
 #### Future development
-Currently, the shader generator tool has a limited number of transformations. The next steps for this tool involve extending transformations set and integrating this tool into the fuzzing chain of GraphicsFuzz.
+Currently, the shader generator tool has a limited number of transformations. The next steps for this tool involve extending transformations set and integrating this tool into the fuzzing chain of GraphicsFuzz. Afterward, it would also be interesting to apply the new capabilities to find a shader compiler bug.
 
 
