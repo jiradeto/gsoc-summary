@@ -91,6 +91,12 @@ Having said that, we have only few sample shaders that come with GraphicsFuzz by
 
 [#643](https://github.com/google/graphicsfuzz/pull/643): New 310es sample shaders - v2
 
+
+| binarysearch_bw.frag | mergesort_mosaic.frag |
+| :---: | :---: | 
+| ![binarysearch_bw](./images/jiradet_shader_binarysearch_bw.png) | ![mergesort_mosaic](./images/jiradet_shader_mergesort_mosaic.png) |
+
+
 [#660](https://github.com/google/graphicsfuzz/pull/660): New 310es sample shaders - quicksort 
 
 [#676](https://github.com/google/graphicsfuzz/pull/676): New 310es sample shaders - binary search tree
